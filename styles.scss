@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url("https://use.typekit.net/giw7ukj.css");
+
+/* Variables
+============================ */
+$color-dark: #494949;
+$color-dark-faded: fade-out($color-dark, 0.99);
+$color-light: white;
+$parallax-height: 100vh;
+$center-margin: 0px auto;
+
+$list1: $color-dark, $color-dark-faded;
+
+@mixin gradient($direction, $list) {
+	background: -webkit-linear-gradient($direction, $list);
+	background: -moz-linear-gradient($direction, $list);
+	background: -o-linear-gradient($direction, $list);
+	background: linear-gradient($direction, $list);
+}
+
+@mixin box-shadow($x-offset, $y-offset, $blur, $spread, $color) {
+	-webkit-box-shadow: $x-offset $y-offset $blur $spread $color;
+	-moz-box-shadow: $x-offset $y-offset $blur $spread $color;
+	box-shadow: $x-offset $y-offset $blur $spread $color;
+}
+
+@mixin background-size($type) {
+	background-size: $type;
+	-webkit-background-size: $type;
+	-moz-background-size: $type;
+	-o-background-size: $type;
+}
+
+@mixin parallax-background($file) {
+	background-image: url($file);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include background-size(cover);
+}
+
+/* ============================
+Main
+============================ */
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Sintony", sans-serif;
+	color: $color-dark;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+}
+
+#first,
+#content-one {
+	@include parallax-background(
+		"https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/baseball/ws-mag-1_blueoverlay.ashx"
+	);
+}
+
+#first h1 {
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+#storybody {
+  background-color: white;
+}
+
+#storybody p {
+  color: black;
+  text-align: left;
+  text-transform: none;
+  padding: 1%;
+}
+
+#storybody h2 {
+  text-align: center;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 40px;
+
+}
+
+.gradient {
+	@include gradient(0deg, $list1);
+}
+
+#second,
+#content-two {
+	@include parallax-background(
+		"https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/cablecar_NG.ashx"
+	);
+}
+
+#third,
+#content-three {
+	@include parallax-background(
+		"https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/YouAreHere.ashx"
+	);
+}
+
+#fourth,
+#content-four {
+	@include parallax-background(
+		"https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/LungCliff.ashx"
+	);
+}
+
+#third,
+#content-three {
+	@include parallax-background(
+		"https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/YouAreHere.ashx"
+	);
+}
+
+#fifth,
+#content-five {
+	@include parallax-background(
+		"https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/Microscope.ashx"
+	);
+}
+
+#sixth,
+#content-six {
+	@include parallax-background(
+		"https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/Fly.ashx"
+	);
+}
+
+.parallax {
+	width: 100%;
+	height: $parallax-height;
+	perspective: 1px;
+	transform: translateZ(-1);
+	overflow-x: hidden;
+	overflow-y: auto;
+
+
+	h1,
+	h2 {
+		color: white;
+		text-align: center;
+		transform: translateZ(-1px);
+	}
+	h1 {
+		font-size: 100px;
+	}
+	h2 {
+		font-size: 50px;
+		font-weight: lighter;
+    text-transform: none;
+	}
+}
+
+p {
+  /*
+	text-wrap: balance;
+  */
+	width: 80%;
+  padding: 1%;
+	margin: $center-margin;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 1.3;
+	color: $color-light;
+  font-family: 'Oskar', sans-serif;
+  font-style: normal;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+h4 {
+	text-wrap: balance;
+	width: 80%;
+	padding: 10px;
+	margin: $center-margin;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 200;
+	line-height: 1.4;
+	color: $color-light;
+  font-family: 'Oskar', sans-serif;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  font-style: normal;
+}
+
+h5 {
+	text-wrap: balance;
+	width: 80%;
+	padding: 1%;
+	margin: $center-margin;
+	text-align: center;
+	font-size: 9rem;
+	font-weight: 200;
+	line-height: 1.4;
+	color: $color-light;
+  font-family: "pauline-script", sans-serif;
+  text-transform: none;
+}
+
+.jjtitle {
+  text-shadow: 2px 3px 7px #3B1E5F, 
+      0 10px 1px #3B1E5F;
+}
+
+.cctitle {
+  text-shadow: 2px 3px 7px #e273a0, 
+      0 10px 1px #e273a0;
+}
+
+
+.bvtitle {
+  text-shadow: 2px 3px 7px #8292b9, 
+      0 10px 1px #8292b9;
+}
+
+.cntitle {
+  text-shadow: 2px 3px 7px #816ba8, 
+      0 10px 1px #816ba8;
+}
+
+.algtitle {
+  text-shadow: 2px 3px 7px #b491ad, 
+      0 10px 1px #b491ad;
+}
+
+.big {
+  font-size: 80px;
+  padding: 5px;
+}
+
+.spacing {
+  padding: 10px;
+}
+
+@import "compass/css3";
+
+body {
+  background: #FFF;
+}
+.scroll-prompt {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  z-index: 100;
+  @include transition(1s opacity ease-out);
+}
+
+.scroll-prompt .scroll-prompt-shape {
+	position: relative;
+	@include animation(slidedown 2.25s infinite);
+}
+
+.scroll-prompt .scroll-prompt-shape:before,
+.scroll-prompt .scroll-prompt-shape:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 3em;
+	height: .5em;
+	top: 0;
+	left: 0;
+	background: #fff;
+	@include border-radius(0 .25em .25em 0);
+	@include transform-origin(bottom, left);
+
+}
+
+.scroll-prompt .scroll-prompt-shape:before {
+	@include transform(scaleX(-1) rotate(-45deg));
+}
+.scroll-prompt .scroll-prompt-shape:after {
+	@include transform(rotate(-45deg));
+}
+
+
+
+@include keyframes(slidedown) {
+    0% {
+        opacity: 0;
+    } 
+    75% {
+        opacity: 1;
+		@include transform(translate(0, 80px));
+    }
+    100% {
+        opacity: 0;
+		@include transform(translate(0, 80px));
+    }
+}
+
+#_progress {
+  --scroll: 0%;
+  background: linear-gradient(
+    to right,
+    rgb(0, 100, 177) var(--scroll),
+    transparent 0
+  );
+  position: fixed;
+  width: 100%;
+  height: 5px;
+  top: 0px;
+  z-index: 100;
+}
