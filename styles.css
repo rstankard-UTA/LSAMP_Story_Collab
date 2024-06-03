@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
+@import url("https://use.typekit.net/giw7ukj.css");
+/* Variables
+============================ */
+/* ============================
+Main
+============================ */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sintony", sans-serif;
+  color: #494949;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+#first,
+#content-one {
+  background-image: url("https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/baseball/ws-mag-1_blueoverlay.ashx");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#first h1 {
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+
+#storybody {
+  background-color: white;
+}
+
+#storybody p {
+  color: black;
+  text-align: left;
+  text-transform: none;
+  padding: 1%;
+}
+
+#storybody h2 {
+  text-align: center;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.gradient {
+  background: linear-gradient(0deg, #494949, rgba(73, 73, 73, 0.01));
+}
+
+#second,
+#content-two {
+  background-image: url("https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/cablecar_NG.ashx");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#third,
+#content-three {
+  background-image: url("https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/YouAreHere.ashx");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#fourth,
+#content-four {
+  background-image: url("https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/LungCliff.ashx");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#third,
+#content-three {
+  background-image: url("https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/YouAreHere.ashx");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#fifth,
+#content-five {
+  background-image: url("https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/Microscope.ashx");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#sixth,
+#content-six {
+  background-image: url("https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/Fly.ashx");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.parallax {
+  width: 100%;
+  height: 100vh;
+  perspective: 1px;
+  transform: translateZ(-1);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax h1,
+.parallax h2 {
+  color: white;
+  text-align: center;
+  transform: translateZ(-1px);
+}
+.parallax h1 {
+  font-size: 100px;
+}
+.parallax h2 {
+  font-size: 50px;
+  font-weight: lighter;
+  text-transform: none;
+}
+
+p {
+  /*
+  text-wrap: balance;
+   */
+  width: 80%;
+  padding: 1%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.3;
+  color: white;
+  font-family: "Oskar", sans-serif;
+  font-style: normal;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+h4 {
+  text-wrap: balance;
+  width: 80%;
+  padding: 10px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 1.4;
+  color: white;
+  font-family: "Oskar", sans-serif;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  font-style: normal;
+}
+
+h5 {
+  text-wrap: balance;
+  width: 80%;
+  padding: 1%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 9rem;
+  font-weight: 200;
+  line-height: 1.4;
+  color: white;
+  font-family: "pauline-script", sans-serif;
+  text-transform: none;
+}
+
+.jjtitle {
+  text-shadow: 2px 3px 7px #3B1E5F, 0 10px 1px #3B1E5F;
+}
+
+.cctitle {
+  text-shadow: 2px 3px 7px #e273a0, 0 10px 1px #e273a0;
+}
+
+.bvtitle {
+  text-shadow: 2px 3px 7px #8292b9, 0 10px 1px #8292b9;
+}
+
+.cntitle {
+  text-shadow: 2px 3px 7px #816ba8, 0 10px 1px #816ba8;
+}
+
+.algtitle {
+  text-shadow: 2px 3px 7px #b491ad, 0 10px 1px #b491ad;
+}
+
+.big {
+  font-size: 80px;
+  padding: 5px;
+}
+
+.spacing {
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */
