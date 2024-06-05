@@ -59,7 +59,7 @@ body {
 #first,
 #content-one {
 	@include parallax-background(
-		"https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/baseball/ws-mag-1_blueoverlay.ashx"
+		"https://cdn.web.uta.edu/-/media/project/website/news/publications/uta-magazine/2024-summer/articles/research/LSAMP_Story_Title.ashx"
 	);
 }
 
@@ -149,6 +149,8 @@ body {
 	}
 	h1 {
 		font-size: 100px;
+		font-family: 'Oskar';
+		text-shadow: 5px 5px 8px red;
 	}
 	h2 {
 		font-size: 50px;
@@ -241,3 +243,32 @@ h5 {
 .spacing {
   padding: 10px;
 }
+.parallax h6 {
+	color: white;
+	text-align: center;
+	transform: translateZ(-1px);
+	font-size: 200px;
+	font-family: 'pauline-script', sans-serif;
+	text-transform: none;
+	text-shadow: 5px 5px 8px red;
+	margin-bottom: 6rem;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	margin-top: 3rem;
+	animation: pulse 3s infinite;
+  }
+
+  @keyframes pulse {
+	0% {
+		transform: scale(1);
+		text-shadow: 4px 4px 6px rgb(193, 113, 113), 0 0 10px rgba(255, 49, 3, 0.628);
+	}
+	50% {
+		transform: scale(1.05);
+		text-shadow: 6px 6px 8px rgb(193, 113, 113), 0 0 20px rgba(255, 49, 3, 0.628);
+	}
+	100% {
+		transform: scale(1);
+		text-shadow: 4px 4px 6px rgb(193, 113, 113), 0 0 10px rgba(255, 49, 3, 0.628);
+	}
+  }
